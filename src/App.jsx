@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   goForward() {
-    
+
   }
 
   render() {
@@ -45,9 +45,9 @@ class App extends Component {
           </div>
         </div>
         <section className='history-sections'>
-          <div className='back-links'></div>
-          <div className='current-link'></div>
-          <div className='forward-links'></div>
+          <div className='back-links'>Back Links</div>
+          <div className='current-link'>Current Link</div>
+          <div className='forward-links'>Forward Link</div>
         </section>
       </div>
     )
