@@ -16,6 +16,14 @@ class App extends Component {
 
   }
 
+  goBack() {
+
+  }
+
+  goForward() {
+    
+  }
+
   render() {
     return (
       <div>
