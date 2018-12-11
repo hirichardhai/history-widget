@@ -12,6 +12,10 @@ class App extends Component {
     }
   }
 
+  newLink() {
+
+  }
+
   render() {
     return (
       <div>
@@ -19,21 +23,24 @@ class App extends Component {
           History Widget
         </div>
         <div className='App'>
-          <header>
+          <div>
             <input
               type='text'
               placeholder='enter new website'
 
             ></input>
             <button onClick={() => this.newLink()}>Submit</button>
-          </header>
-          <section className='history-sections'>
-            <div className='back-links'></div>
-            <div className='current-link'></div>
-            <div className='forward-links'></div>
-          </section>
+          </div>
+          <div>
+            <button onClick={ () => this.goBack() }>Go Back</button>
+            <button onClick={ () => this.goForward() }>Go Forward</button>
+          </div>
         </div>
-
+        <section className='history-sections'>
+          <div className='back-links'></div>
+          <div className='current-link'></div>
+          <div className='forward-links'></div>
+        </section>
       </div>
     )
   }
