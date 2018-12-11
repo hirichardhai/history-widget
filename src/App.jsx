@@ -12,7 +12,16 @@ class App extends Component {
 
   render() {
     return (
-      <div>App</div>
+      <div>
+        <header>
+          History Widget
+        </header>
+        <section className='history-sections'>
+          <div className='back-links'></div>
+          <div className='current-link'></div>
+          <div className='forward-links'></div>
+        </section>
+      </div>
     )
   }
 }
