@@ -14,9 +14,17 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <header>
+      <div className='app'>
+        <div>
           History Widget
+        </div>
+        <header>
+          <input 
+            type='text' 
+            placeholder='enter new website'
+
+          ></input>
+          <button onClick={ () => this.newLink() }>Submit</button>
         </header>
         <section className='history-sections'>
           <div className='back-links'></div>
