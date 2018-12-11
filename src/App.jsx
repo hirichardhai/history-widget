@@ -46,7 +46,7 @@ class App extends Component {
         </div>
         <section className='history-sections'>
           <div className='back-links'>Back Links</div>
-          <div className='current-link'>Current Link</div>
+          <div className='current-link'>Current Link {this.state.currentLink}</div>
           <div className='forward-links'>Forward Link</div>
         </section>
       </div>
