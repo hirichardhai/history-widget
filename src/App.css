@@ -1,0 +1,8 @@
+.description {
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}

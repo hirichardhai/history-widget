@@ -14,23 +14,26 @@ class App extends Component {
 
   render() {
     return (
-      <div className='app'>
-        <div>
+      <div>
+        <div className='description'>
           History Widget
         </div>
-        <header>
-          <input 
-            type='text' 
-            placeholder='enter new website'
+        <div className='App'>
+          <header>
+            <input
+              type='text'
+              placeholder='enter new website'
 
-          ></input>
-          <button onClick={ () => this.newLink() }>Submit</button>
-        </header>
-        <section className='history-sections'>
-          <div className='back-links'></div>
-          <div className='current-link'></div>
-          <div className='forward-links'></div>
-        </section>
+            ></input>
+            <button onClick={() => this.newLink()}>Submit</button>
+          </header>
+          <section className='history-sections'>
+            <div className='back-links'></div>
+            <div className='current-link'></div>
+            <div className='forward-links'></div>
+          </section>
+        </div>
+
       </div>
     )
   }
