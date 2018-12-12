@@ -11,7 +11,11 @@
 
 section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 10px;
+  border-bottom: solid black 1px;
+}
+
+.back-links, .current-link, .forward-links {
   border-bottom: solid black 1px;
 }
