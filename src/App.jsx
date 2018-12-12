@@ -8,12 +8,16 @@ class App extends Component {
     this.state = {
       backLinks: [],
       currentLink: '',
+      renderLink: '',
       forwardLinks: []
     }
   }
 
   newLink() {
-
+    let link = this.state.currentLink;
+    this.setState({ renderLink: link });
+    let inputFields = document.querySelectorAll('input');
+    inputFields.forEach(input => input.value = '');
   }
 
   goBack() {
@@ -35,7 +39,7 @@ class App extends Component {
             <input
               type='text'
               placeholder='enter new website'
-
+              onChange={event => this.setState({ currentLink: event.target.value })}
             ></input>
             <button onClick={() => this.newLink()}>Submit</button>
           </div>
@@ -46,7 +50,12 @@ class App extends Component {
         </div>
         <section className='history-sections'>
           <div className='back-links'>Back Links</div>
-          <div className='current-link'>Current Link {this.state.currentLink}</div>
+          <div className='current-link'>
+            Current Link 
+            <div>
+              {this.state.renderLink}
+            </div>
+          </div>
           <div className='forward-links'>Forward Link</div>
         </section>
       </div>

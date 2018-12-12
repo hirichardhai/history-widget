@@ -13,4 +13,5 @@ section {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
+  border-bottom: solid black 1px;
 }
