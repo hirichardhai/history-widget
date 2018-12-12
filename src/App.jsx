@@ -65,4 +65,10 @@ class App extends Component {
   }
 }
 
+class Stack {
+  constructor() {
+    
+  }
+}
+
 export default App;
