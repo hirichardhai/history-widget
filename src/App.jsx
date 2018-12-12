@@ -21,7 +21,9 @@ class App extends Component {
   }
 
   goBack() {
-
+    let newBackLinks = this.state.backLinks;
+    let backLinkTest = newBackLinks.concat(this.state.renderLink);
+    this.setState({ backLinks: backLinkTest })
   }
 
   goForward() {
