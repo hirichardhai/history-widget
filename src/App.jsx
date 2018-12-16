@@ -51,13 +51,13 @@ class App extends Component {
           </div>
         </div>
         <section className='history-sections'>
+          <div>Back Links</div>
+          <div>Current Link</div>
+          <div>Forward Link</div>
+        </section>
+        <section>
           <div className='back-links'>Back Links</div>
-          <div className='current-link'>
-            Current Link 
-            <div>
-              {this.state.renderLink}
-            </div>
-          </div>
+          <div className='current-link'>Current Link</div>
           <div className='forward-links'>Forward Link</div>
         </section>
       </div>
