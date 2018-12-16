@@ -62,7 +62,7 @@ class App extends Component {
           <div>Forward Link</div>
         </section>
         <section className='history-links'>
-          <div className='back-links'>test</div>
+          <div className='back-links'></div>
           <div className='current-link'>{this.renderCurrentLink()}</div>
           <div className='forward-links'></div>
         </section>
