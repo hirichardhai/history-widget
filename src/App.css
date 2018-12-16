@@ -19,11 +19,13 @@ body {
   border-bottom: solid black 1px;
 }
 
-.back-links, .current-link, .forward-links {
-
-}
-
 .history-links {
   display: flex;
   justify-content: space-around;
+}
+
+.links {
+  padding-top: 7px;
+  color: blue;
+  text-decoration: underline;
 }
