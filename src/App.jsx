@@ -23,7 +23,8 @@ class App extends Component {
   goBack() {
     let newBackLinks = this.state.backLinks;
     let backLinkTest = newBackLinks.concat(this.state.renderLink);
-    this.setState({ backLinks: backLinkTest })
+    this.setState({ backLinks: backLinkTest, renderLink: '' })
+
   }
 
   goForward() {
@@ -72,7 +73,7 @@ class App extends Component {
           <div>Forward Link</div>
         </section>
         <section className='history-links'>
-          <div className='back-links'></div>
+          <div className='back-links'>{this.renderBackLinks()}</div>
           <div className='current-link'>{this.renderCurrentLink()}</div>
           <div className='forward-links'></div>
         </section>
