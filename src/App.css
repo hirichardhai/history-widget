@@ -11,11 +11,16 @@
 
 .history-sections {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 10px;
   border-bottom: solid black 1px;
 }
 
 .back-links, .current-link, .forward-links {
 
+}
+
+.history-links {
+  display: flex;
+  justify-content: space-around;
 }
