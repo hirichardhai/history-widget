@@ -27,13 +27,22 @@ class App extends Component {
 
   goBack() {
     if (this.state.backLinks.length === 0) {
-      let newForwardLinks = this.state.forwardLinks;
-      newForwardLinks.shift(this.state.renderLink);
-    }
-    let newBackLinks = this.state.backLinks;
-    let backLinkTest = newBackLinks.concat(this.state.renderLink);
-    this.setState({ backLinks: backLinkTest, renderLink: '' })
+      return;
+    } else {
+      let current = this.state.renderLink;
+      let forward = this.state.forwardLinks;
+      let back = this.state.backLinks;
 
+      // currentLink must be added to top of forwardLinks stack
+      forward.unshift(current);
+      console.log('forward stack', forward);
+      // top of backLinks stack must be the new currentLink & remove top of backLink
+      let newCurrentLink = back.shift();
+      console.log('newCurrentLink', newCurrentLink);
+
+      // set state of all new things
+      this.setState({ forwardLinks: forward, backLinks: back, renderLink: newCurrentLink })
+    }
   }
 
   goForward() {
@@ -50,6 +59,16 @@ class App extends Component {
   renderBackLinks() {
     return(
       this.state.backLinks.map(link => {
+        return (
+          <div>{link}</div>
+        )
+      })
+    )
+  }
+
+  renderForwardLinks() {
+    return(
+      this.state.forwardLinks.map(link => {
         return (
           <div>{link}</div>
         )
@@ -85,7 +104,7 @@ class App extends Component {
         <section className='history-links'>
           <div className='back-links'>{this.renderBackLinks()}</div>
           <div className='current-link'>{this.renderCurrentLink()}</div>
-          <div className='forward-links'></div>
+          <div className='forward-links'>{this.renderForwardLinks()}</div>
         </section>
       </div>
     )
