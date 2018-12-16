@@ -9,7 +9,7 @@
   padding-top: 10px;
 }
 
-section {
+.history-sections {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -17,5 +17,5 @@ section {
 }
 
 .back-links, .current-link, .forward-links {
-  border-bottom: solid black 1px;
+
 }
