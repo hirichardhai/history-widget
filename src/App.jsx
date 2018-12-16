@@ -55,10 +55,10 @@ class App extends Component {
           <div>Current Link</div>
           <div>Forward Link</div>
         </section>
-        <section>
-          <div className='back-links'>Back Links</div>
-          <div className='current-link'>Current Link</div>
-          <div className='forward-links'>Forward Link</div>
+        <section className='history-links'>
+          <div className='back-links'></div>
+          <div className='current-link'></div>
+          <div className='forward-links'></div>
         </section>
       </div>
     )
