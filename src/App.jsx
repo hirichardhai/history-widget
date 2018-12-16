@@ -21,6 +21,11 @@ class App extends Component {
   }
 
   goBack() {
+    if (this.state.backLinks.length === 0) {
+      let newForwardLinks = this.state.forwardLinks;
+      newForwardLinks.shift(this.state.renderLink);
+      this.setState
+    }
     let newBackLinks = this.state.backLinks;
     let backLinkTest = newBackLinks.concat(this.state.renderLink);
     this.setState({ backLinks: backLinkTest, renderLink: '' })
@@ -28,6 +33,7 @@ class App extends Component {
   }
 
   goForward() {
+
 
   }
 
