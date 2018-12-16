@@ -36,6 +36,16 @@ class App extends Component {
     )
   }
 
+  renderBackLinks() {
+    return(
+      this.state.backLinks.map(link => {
+        return (
+          <div>{link}</div>
+        )
+      })
+    )
+  }
+
   render() {
     return (
       <div>
