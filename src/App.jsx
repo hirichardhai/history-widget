@@ -71,29 +71,4 @@ class App extends Component {
   }
 }
 
-class Stack {
-  constructor() {
-    this.count = 0;
-    this.storage = {};
-  }
-
-  push(value) {
-    this.storage[this.count] = value;
-    this.count++;
-  }
-
-  pop() {
-    var temp = this.storage[this.count - 1];
-    delete this.storage[this.count - 1];
-    if(this.count !== 0){
-      this.count--;
-    }
-    return temp;
-  }
-
-  size() {
-    return this.count;
-  }
-}
-
 export default App;
