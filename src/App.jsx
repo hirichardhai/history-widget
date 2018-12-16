@@ -14,8 +14,13 @@ class App extends Component {
   }
 
   newLink() {
+    if (this.state.renderLink !== '') {
+      let backLinks = this.state.backLinks;
+      backLinks.unshift(this.state.renderLink);
+      this.setState({ backLinks: backLinks })
+    }
     let link = this.state.currentLink;
-    this.setState({ renderLink: link });
+    this.setState({ renderLink: link, forwardLinks: [] });
     let inputFields = document.querySelectorAll('input');
     inputFields.forEach(input => input.value = '');
   }
@@ -24,7 +29,6 @@ class App extends Component {
     if (this.state.backLinks.length === 0) {
       let newForwardLinks = this.state.forwardLinks;
       newForwardLinks.shift(this.state.renderLink);
-      this.setState
     }
     let newBackLinks = this.state.backLinks;
     let backLinkTest = newBackLinks.concat(this.state.renderLink);
