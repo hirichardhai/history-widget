@@ -30,6 +30,12 @@ class App extends Component {
 
   }
 
+  renderCurrentLink() {
+    return (
+      <div>{this.state.renderLink}</div>
+    )
+  }
+
   render() {
     return (
       <div>
@@ -57,7 +63,7 @@ class App extends Component {
         </section>
         <section className='history-links'>
           <div className='back-links'>test</div>
-          <div className='current-link'>{this.state.currentLink}</div>
+          <div className='current-link'>{this.renderCurrentLink()}</div>
           <div className='forward-links'></div>
         </section>
       </div>
