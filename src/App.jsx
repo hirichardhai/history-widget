@@ -46,7 +46,22 @@ class App extends Component {
   }
 
   goForward() {
+    if (this.state.forwardLinks.length === 0) {
+      return;
+    } else {
+      let current = this.state.renderLink;
+      let forward = this.state.forwardLinks;
+      let back = this.state.backLinks;
 
+      // add renderLink to top of backLinks
+      back.unshift(current);
+
+      // remove top of forwardLinks stack and save as link
+      let newLink = forward.shift();
+
+      // set state for backLinks,renderLink, and forwardLinks
+      this.setState({ backLinks: back, renderLink: newLink, forwardLinks: forward })
+    }
 
   }
 
