@@ -1,1 +1,1 @@
-Take home challenge to build a back and forward UI widget
+Take home challenge to build a back and forward UI widget.
