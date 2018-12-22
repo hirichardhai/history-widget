@@ -48,6 +48,7 @@ class App extends Component {
 
   goForward() {
     if (this.state.forwardLinks.length === 0) {
+      alert('no forward links available')
       return;
     } else {
       let current = this.state.renderLink;
