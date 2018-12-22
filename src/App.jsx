@@ -30,7 +30,6 @@ class App extends Component {
       alert('no links to go back to!')
       return;
     } else {
-
       let current = this.state.renderLink;
       let forward = this.state.forwardLinks;
       let back = this.state.backLinks;
@@ -52,7 +51,6 @@ class App extends Component {
       alert('no forward links available')
       return;
     } else {
-      
       let current = this.state.renderLink;
       let forward = this.state.forwardLinks;
       let back = this.state.backLinks;
@@ -66,7 +64,6 @@ class App extends Component {
       // set state for backLinks,renderLink, and forwardLinks
       this.setState({ backLinks: back, renderLink: newLink, forwardLinks: forward })
     }
-
   }
 
   renderCurrentLink() {
