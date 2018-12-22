@@ -4,7 +4,6 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       backLinks: [],
       currentLink: '',
@@ -19,6 +18,7 @@ class App extends Component {
       backLinks.unshift(this.state.renderLink);
       this.setState({ backLinks: backLinks })
     }
+
     let link = this.state.currentLink;
     this.setState({ renderLink: link, forwardLinks: [] });
     let inputFields = document.querySelectorAll('input');
@@ -30,6 +30,7 @@ class App extends Component {
       alert('no links to go back to!')
       return;
     } else {
+
       let current = this.state.renderLink;
       let forward = this.state.forwardLinks;
       let back = this.state.backLinks;
@@ -51,6 +52,7 @@ class App extends Component {
       alert('no forward links available')
       return;
     } else {
+      
       let current = this.state.renderLink;
       let forward = this.state.forwardLinks;
       let back = this.state.backLinks;
