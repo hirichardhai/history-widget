@@ -27,7 +27,7 @@ class App extends Component {
 
   goBack() {
     if (this.state.backLinks.length === 0) {
-      alert('you can not go back')
+      alert('no links to go back to!')
       return;
     } else {
       let current = this.state.renderLink;
