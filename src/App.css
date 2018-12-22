@@ -28,6 +28,5 @@
 }
 
 .current-link, .back-links, .forward-links {
-  border-right: solid black 1px;
-  border-left: solid black 1px;
+
 }
