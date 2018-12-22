@@ -27,7 +27,7 @@
   text-decoration: underline;
 }
 
-.current-link, .current-link, .forward-links {
+.current-link, .back-links, .forward-links {
   border-right: solid black 1px;
   border-left: solid black 1px;
 }
