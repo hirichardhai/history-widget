@@ -29,7 +29,7 @@ class App extends Component {
     if (this.state.backLinks.length === 0) {
       alert('no links to go back to!')
       return;
-    } else {
+    } else {  
       let current = this.state.renderLink;
       let forward = this.state.forwardLinks;
       let back = this.state.backLinks;
@@ -56,6 +56,7 @@ class App extends Component {
       let back = this.state.backLinks;
 
       // add renderLink to top of backLinks
+      
       back.unshift(current);
 
       // remove top of forwardLinks stack and save as link
