@@ -60,10 +60,11 @@ class App extends Component {
       back.unshift(current);
 
       // remove top of forwardLinks stack and save as link
-      
+
       let newLink = forward.shift();
 
       // set state for backLinks,renderLink, and forwardLinks
+      
       this.setState({ backLinks: back, renderLink: newLink, forwardLinks: forward })
     }
   }
