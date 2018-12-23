@@ -68,7 +68,7 @@ class App extends Component {
 
   renderCurrentLink() {
     return (
-      <div className='links'>{this.state.renderLink}</div>
+      <div className='links'>{ this.state.renderLink }</div>
     )
   }
 
@@ -76,7 +76,7 @@ class App extends Component {
     return(
       this.state.backLinks.map(link => {
         return (
-          <div className='links'>{link}</div>
+          <div className='links'>{ link }</div>
         )
       })
     )
@@ -86,7 +86,7 @@ class App extends Component {
     return(
       this.state.forwardLinks.map(link => {
         return (
-          <div className='links'>{link}</div>
+          <div className='links'>{ link }</div>
         )
       })
     )
