@@ -35,4 +35,5 @@ body {
 }
 
 .current-link, .back-links, .forward-links {
+  padding: 5px;
 }
