@@ -25,6 +25,7 @@ class App extends Component {
     inputFields.forEach(input => input.value = '');
   }
 
+  // goBack attaches to back button that checks if there are any links in this.state.backLinks, if none, alert can't go back, if links in stack, then unshift link on top of backLinks to renderLink while also push any renderLink into forwardLinks stack
   goBack() {
     if (this.state.backLinks.length === 0) {
       alert('no links to go back to!');
