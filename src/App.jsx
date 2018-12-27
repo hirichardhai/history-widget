@@ -47,6 +47,7 @@ class App extends Component {
     }
   }
 
+  // goForward method button will check if there are any forward links, if none, alert no forward links, if yes, then puts the forward link on top of the stack back as the current link
   goForward() {
     if (this.state.forwardLinks.length === 0) {
       alert('no forward links available');
