@@ -68,6 +68,7 @@ class App extends Component {
     }
   }
 
+  // default method for rendering any current link from this.state.renderLink
   renderCurrentLink() {
     return (
       <div className='links'>{ this.state.renderLink }</div>
