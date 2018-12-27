@@ -74,6 +74,7 @@ class App extends Component {
     )
   }
 
+  // renders any links in this.state.backLinks with className links
   renderBackLinks() {
     return(
       this.state.backLinks.map(link => {
