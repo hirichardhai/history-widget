@@ -85,6 +85,7 @@ class App extends Component {
     )
   }
 
+  // renders any links in this.state.forwardLinks with className links
   renderForwardLinks() {
     return(
       this.state.forwardLinks.map(link => {
