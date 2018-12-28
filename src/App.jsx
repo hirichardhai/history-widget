@@ -64,11 +64,12 @@ class App extends Component {
 
       // remove top of forwardLinks stack and save as link
       let newLink = forward.shift();
-
+      
       // set state for backLinks,renderLink, and forwardLinks
       this.setState({ backLinks: back, renderLink: newLink, forwardLinks: forward })
     }
   }
+
 
   // default method for rendering any current link from this.state.renderLink
   renderCurrentLink() {
@@ -76,6 +77,7 @@ class App extends Component {
       <div className='links'>{ this.state.renderLink }</div>
     )
   }
+
 
   // renders any links in this.state.backLinks with className links
   renderBackLinks() {
@@ -87,6 +89,7 @@ class App extends Component {
       })
     )
   }
+
 
   // renders any links in this.state.forwardLinks with className links
   renderForwardLinks() {
