@@ -37,3 +37,7 @@ body {
 .current-link, .back-links, .forward-links {
   padding: 5px;
 }
+
+button {
+  margin: 10px;
+}
