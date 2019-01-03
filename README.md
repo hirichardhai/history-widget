@@ -1,1 +1,1 @@
-Take home challenge to build a back and forward UI widget with react.js.
+Take home challenge to build a working web history user interface with full forward, back, and current link stacks.
