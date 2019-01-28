@@ -39,6 +39,7 @@ class App extends Component {
       // currentLink must be added to top of forwardLinks stack
       forward.unshift(current);
       console.log('forward stack', forward);
+
       // top of backLinks stack must be the new currentLink & remove top of backLink
       let newCurrentLink = back.shift();
       console.log('newCurrentLink', newCurrentLink);
@@ -71,6 +72,7 @@ class App extends Component {
   }
 
   // default method for rendering any current link from this.state.renderLink
+
   renderCurrentLink() {
     return (
       <div className='links'>{ this.state.renderLink }</div>
@@ -78,6 +80,7 @@ class App extends Component {
   }
 
   // renders any links in this.state.backLinks with className links
+
   renderBackLinks() {
     return(
       this.state.backLinks.map(link => {
@@ -89,6 +92,7 @@ class App extends Component {
   }
 
   // renders any links in this.state.forwardLinks with className links
+  
   renderForwardLinks() {
     return(
       this.state.forwardLinks.map(link => {
